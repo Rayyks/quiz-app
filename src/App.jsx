@@ -44,37 +44,47 @@ function App() {
     {
       questionText: "Apa kepanjangan dari HTML",
       answerOptions: [
-        { answerText: "11", isCorrect: false },
-        { answerText: "17", isCorrect: false },
-        { answerText: "19", isCorrect: true },
-        { answerText: "21", isCorrect: false },
+        { answerText: "Hypertext Markup Language", isCorrect: true },
+        { answerText: "Hype Beast Language", isCorrect: false },
+        { answerText: "Hypertext Markdown Language", isCorrect: false },
+        { answerText: "Hyper Text Mark Language", isCorrect: false },
       ],
     },
     {
       questionText: "Apa kepanjangan dari CSS",
       answerOptions: [
-        { answerText: "11", isCorrect: false },
-        { answerText: "17", isCorrect: false },
-        { answerText: "19", isCorrect: true },
-        { answerText: "21", isCorrect: false },
+        { answerText: "Cari Sarjana Sukses", isCorrect: false },
+        { answerText: "Cascading Story Style", isCorrect: false },
+        { answerText: "Cascading Style Sheets", isCorrect: true },
+        { answerText: "Cheap Sauce Strawberry", isCorrect: false },
       ],
     },
     {
       questionText: "Apa kepanjangan dari HTTP",
       answerOptions: [
-        { answerText: "11", isCorrect: false },
-        { answerText: "17", isCorrect: false },
-        { answerText: "19", isCorrect: true },
-        { answerText: "21", isCorrect: false },
+        { answerText: "Hypertext Tips To Pro", isCorrect: false },
+        { answerText: "Hari Tanpa Tanda Pengenal", isCorrect: false },
+        { answerText: "Hypertext Transfer Protocol", isCorrect: true },
+        { answerText: "Hyper Takut Takut Push", isCorrect: false },
       ],
     },
     {
-      questionText: "Apa itu GIT",
+      questionText: "Apa kegunaan GIT",
       answerOptions: [
-        { answerText: "11", isCorrect: false },
-        { answerText: "17", isCorrect: false },
-        { answerText: "19", isCorrect: true },
-        { answerText: "21", isCorrect: false },
+        {
+          answerText:
+            "mengatur versi dari sebuah source code program dengan cara memberikan tanda baris dan code yang akan ditambah atau diganti",
+          isCorrect: true,
+        },
+        {
+          answerText: "Mengganti codingan lama dengan yang baru",
+          isCorrect: false,
+        },
+        {
+          answerText: "Mengunci source code di versi yang tetap",
+          isCorrect: false,
+        },
+        { answerText: "Semua jawaban benar", isCorrect: false },
       ],
     },
   ];
@@ -104,7 +114,7 @@ function App() {
     <Loading />;
     setTimeout(() => {
       setLoading(false);
-    }, 500);
+    }, 900);
   }, []);
 
   return (
