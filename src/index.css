@@ -8,6 +8,7 @@
 }
 
 body {
+
   margin: 0;
   display: flex;
   justify-content: center;
@@ -38,6 +39,7 @@ body {
   display: flex;
   justify-content: center;
 }
+
 
 .score-seciton {
   display: flex;
@@ -114,6 +116,26 @@ button:focus {
 
 button svg {
   margin-right: 5px;
+}
+
+
+/* ON MOBILE SCREEN */
+@media only screen and (max-width: 768px) {
+
+  /* For mobile phones: */
+  .App {
+
+    background-color: #252d4a;
+    width: 100%;
+    min-height: 200px;
+    height: min-content;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+  }
+
 }
 
 /*  LOADER ANIMATION */
