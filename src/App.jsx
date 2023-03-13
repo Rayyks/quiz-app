@@ -6,21 +6,21 @@ import Loading from "./Loading";
 function App() {
   const questions = [
     {
-      questionText: "What is the capital of France?",
+      questionText: "Who is USA President right now?",
       answerOptions: [
-        { answerText: "New York", isCorrect: false },
-        { answerText: "London", isCorrect: false },
-        { answerText: "Paris", isCorrect: true },
-        { answerText: "Dublin", isCorrect: false },
+        { answerText: "Joe Mama", isCorrect: false },
+        { answerText: "Joe Taslim", isCorrect: false },
+        { answerText: "Ajoe", isCorrect: false },
+        { answerText: "Joe Biden", isCorrect: true },
       ],
     },
     {
       questionText: "Who is CEO of Tesla?",
       answerOptions: [
-        { answerText: "Jeff Bezos", isCorrect: false },
+        { answerText: "Elon Must", isCorrect: false },
         { answerText: "Elon Musk", isCorrect: true },
-        { answerText: "Bill Gates", isCorrect: false },
-        { answerText: "Tony Stark", isCorrect: false },
+        { answerText: "Ambatu busk", isCorrect: false },
+        { answerText: "Saman Brembo", isCorrect: false },
       ],
     },
     {
@@ -33,12 +33,48 @@ function App() {
       ],
     },
     {
-      questionText: "How many Harry Potter books are there?",
+      questionText: "What is 9 + 10?",
       answerOptions: [
-        { answerText: "1", isCorrect: false },
-        { answerText: "4", isCorrect: false },
-        { answerText: "6", isCorrect: false },
-        { answerText: "7", isCorrect: true },
+        { answerText: "11", isCorrect: false },
+        { answerText: "17", isCorrect: false },
+        { answerText: "19", isCorrect: true },
+        { answerText: "21", isCorrect: false },
+      ],
+    },
+    {
+      questionText: "Apa kepanjangan dari HTML",
+      answerOptions: [
+        { answerText: "11", isCorrect: false },
+        { answerText: "17", isCorrect: false },
+        { answerText: "19", isCorrect: true },
+        { answerText: "21", isCorrect: false },
+      ],
+    },
+    {
+      questionText: "Apa kepanjangan dari CSS",
+      answerOptions: [
+        { answerText: "11", isCorrect: false },
+        { answerText: "17", isCorrect: false },
+        { answerText: "19", isCorrect: true },
+        { answerText: "21", isCorrect: false },
+      ],
+    },
+    {
+      questionText: "Apa kepanjangan dari HTTP",
+      answerOptions: [
+        { answerText: "11", isCorrect: false },
+        { answerText: "17", isCorrect: false },
+        { answerText: "19", isCorrect: true },
+        { answerText: "21", isCorrect: false },
+      ],
+    },
+    {
+      questionText: "Apa itu GIT",
+      answerOptions: [
+        { answerText: "11", isCorrect: false },
+        { answerText: "17", isCorrect: false },
+        { answerText: "19", isCorrect: true },
+        { answerText: "21", isCorrect: false },
       ],
     },
   ];
@@ -47,7 +83,7 @@ function App() {
   const [showScore, setShowScore] = useState(false);
   const [score, setScore] = useState(0);
 
-  const handleAnswerOption = (isCorrect) => {
+  const handleAnswerOptionClick = (isCorrect) => {
     if (isCorrect) {
       setScore(score + 1);
     }
@@ -68,7 +104,7 @@ function App() {
     <Loading />;
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 500);
   }, []);
 
   return (
