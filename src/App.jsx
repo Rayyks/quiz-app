@@ -6,8 +6,7 @@ import Loading from "./Loading";
 function App() {
   const questions = [
     {
-      questionText:
-        "Salah satu teori yang paling terkenal adalah soal 'relativitas' yang dikemukakan pada tahun 1915. Teori tersebut menyebutkan bahwa hukum fisika akan selalu sama dan konstan di mana pun. Meskipun akan ada yang berbeda hal itu disebabkan oleh ruang dan waktu. Pertanyaanya siapa yang membuat teori tersebut?",
+      questionText: "Who is USA President right now?",
       answerOptions: [
         { answerText: "Albert Einstein", isCorrect: true },
         { answerText: "Isacc Newton", isCorrect: false },
@@ -16,7 +15,7 @@ function App() {
       ],
     },
     {
-      questionText: "Siapa CEO Tesla?",
+      questionText: "Who is CEO of Tesla?",
       answerOptions: [
         { answerText: "Elon Must", isCorrect: false },
         { answerText: "Elon Musk", isCorrect: true },
@@ -25,7 +24,7 @@ function App() {
       ],
     },
     {
-      questionText: "Perusahaan apa yang membuat Iphone ?",
+      questionText: "The iPhone was created by which company?",
       answerOptions: [
         { answerText: "Apple Inc", isCorrect: true },
         { answerText: "Intel", isCorrect: false },
@@ -34,7 +33,7 @@ function App() {
       ],
     },
     {
-      questionText: "Berapa hasil 9 + 10 ?",
+      questionText: "What is 9 + 10?",
       answerOptions: [
         { answerText: "11", isCorrect: false },
         { answerText: "17", isCorrect: false },
