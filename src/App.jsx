@@ -6,12 +6,13 @@ import Loading from "./Loading";
 function App() {
   const questions = [
     {
-      questionText: "Siapa Presiden USA sekarang?",
+      questionText:
+        "Salah satu teori yang paling terkenal adalah soal 'relativitas' yang dikemukakan pada tahun 1915. Teori tersebut menyebutkan bahwa hukum fisika akan selalu sama dan konstan di mana pun. Meskipun akan ada yang berbeda hal itu disebabkan oleh ruang dan waktu. Pertanyaanya siapa yang membuat teori tersebut?",
       answerOptions: [
-        { answerText: "Joe Mama", isCorrect: false },
-        { answerText: "Joe Taslim", isCorrect: false },
-        { answerText: "Ajoe", isCorrect: false },
-        { answerText: "Joe Biden", isCorrect: true },
+        { answerText: "Albert Einstein", isCorrect: true },
+        { answerText: "Isacc Newton", isCorrect: false },
+        { answerText: "Nikola Tesla", isCorrect: false },
+        { answerText: "Julius Robert Oppenheimer", isCorrect: false },
       ],
     },
     {
@@ -24,16 +25,16 @@ function App() {
       ],
     },
     {
-      questionText: "Apa nama perusahaan yang membuat Iphone?",
+      questionText: "Perusahaan apa yang membuat Iphone ?",
       answerOptions: [
-        { answerText: "Apple", isCorrect: true },
+        { answerText: "Apple Inc", isCorrect: true },
         { answerText: "Intel", isCorrect: false },
         { answerText: "Amazon", isCorrect: false },
         { answerText: "Microsoft", isCorrect: false },
       ],
     },
     {
-      questionText: "Berapa hasil 9 + 10?",
+      questionText: "Berapa hasil 9 + 10 ?",
       answerOptions: [
         { answerText: "11", isCorrect: false },
         { answerText: "17", isCorrect: false },
@@ -42,7 +43,7 @@ function App() {
       ],
     },
     {
-      questionText: "Apa kepanjangan dari HTML",
+      questionText: "Apa kepanjangan dari HTML ?",
       answerOptions: [
         { answerText: "Hypertext Markup Language", isCorrect: true },
         { answerText: "Hype Beast Language", isCorrect: false },
@@ -51,21 +52,21 @@ function App() {
       ],
     },
     {
-      questionText: "Apa kepanjangan dari CSS",
+      questionText: "Apa kepanjangan dari CSS ?",
       answerOptions: [
         { answerText: "Cari Sarjana Sukses", isCorrect: false },
-        { answerText: "Cascading Story Style", isCorrect: false },
         { answerText: "Cascading Style Sheets", isCorrect: true },
+        { answerText: "Cascading Story Style", isCorrect: false },
         { answerText: "Cheap Sauce Strawberry", isCorrect: false },
       ],
     },
     {
-      questionText: "Apa kepanjangan dari HTTP",
+      questionText: "HTTP merupakan singkatan dari ?",
       answerOptions: [
-        { answerText: "Hypertext Tips To Pro", isCorrect: false },
-        { answerText: "Hari Tanpa Tanda Pengenal", isCorrect: false },
         { answerText: "Hypertext Transfer Protocol", isCorrect: true },
-        { answerText: "Hyper Takut Takut Push", isCorrect: false },
+        { answerText: "Hype Trans Texture Push", isCorrect: false },
+        { answerText: "Hypertext Tips To Pro", isCorrect: false },
+        { answerText: "Semua jawaban salah", isCorrect: false },
       ],
     },
     {
@@ -125,7 +126,15 @@ function App() {
         <div>
           {showScore ? (
             <div className="score-section">
-              You scored {score} out of {questions.length}
+              anda menjawab {score} dari {score}
+              {score >= 8 ? (
+                <p>Selamat anda menjawab semua quiz nya</p>
+              ) : (
+                <p>
+                  Anda menjawab sebagian quiznya, tidak masalah jika tidak benar
+                  semua, stay curious! :)
+                </p>
+              )}
             </div>
           ) : (
             <>
